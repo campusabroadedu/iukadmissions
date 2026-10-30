@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International University of Kyrgyzstan | Campus Abroad Official Representative</title>
+  <meta name="description" content="Study MBBS/MD at International University of Kyrgyzstan (IUK Bishkek). State Accredited 2026-2032, AAOPO, IAAR (WFME recognised), WDOMS, ECFMG Pathway 3. Official Representative: Campus Abroad.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f25b2a',
+              blue: '#0280c7',
+              navy: '#061325',
+              dark: '#030914',
+              gold: '#c59a3f'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif']
+          },
+          animation: {
+            'float': 'float 4s ease-in-out infinite',
+            'glow': 'glow 3s ease-in-out infinite alternate',
+            'spin-slow': 'spin 12s linear infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            },
+            glow: {
+              '0%': { filter: 'drop-shadow(0 0 10px rgba(242, 91, 42, 0.3))' },
+              '100%': { filter: 'drop-shadow(0 0 25px rgba(242, 91, 42, 0.7))' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030914;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f25b2a;
+    }
+
+    /* Ambient Glow Backgrounds */
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.18;
+    }
+
+    /* Glass Effect */
+    .glass-card {
+      background: rgba(11, 25, 44, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.35s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(242, 91, 42, 0.5);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -10px rgba(242, 91, 42, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-[#030914] text-slate-100 antialiased font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
+
+  <!-- TOP MOVING OFFICIAL MARQUEE / BADGE BAR -->
+  <div class="relative z-50 bg-gradient-to-r from-brand-orange via-amber-500 to-brand-orange py-2 px-4 text-center text-xs sm:text-sm font-bold text-slate-950 tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20">
+    <i class="fa-solid fa-certificate text-slate-900 animate-spin-slow"></i>
+    <span>OFFICIAL AUTHORISED REPRESENTATIVE — <strong>CAMPUS ABROAD EDUCATIONAL SERVICES LLP</strong>[cite: 48]</span>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 bg-[#061325]/90 backdrop-blur-md border-b border-slate-800 shadow-xl transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Official Campus Abroad Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <svg class="h-11 w-auto transition-transform duration-300 group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 12C29.0132 12 12 29.0132 12 50C12 70.9868 29.0132 88 50 88C70.9868 88 88 70.9868 88 50" stroke="#f25b2a" stroke-width="11" stroke-linecap="round"/>
+          <path d="M50 26C36.7452 26 26 36.7452 26 50C26 63.2548 36.7452 74 50 74C63.2548 74 74 63.2548 74 50" stroke="#f25b2a" stroke-width="11" stroke-linecap="round"/>
+        </svg>
+        <div class="leading-tight">
+          <span class="block font-black text-xl tracking-tight text-[#0280c7] font-sans group-hover:text-amber-400 transition-colors">CAMPUS ABROAD</span>
+          <span class="block text-[9px] text-slate-300 uppercase tracking-widest font-semibold">Educational Services LLP</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs uppercase font-bold tracking-wider text-slate-300">
+        <a href="#about" class="hover:text-brand-orange transition-colors">About IUK</a>
+        <a href="#gallery" class="hover:text-brand-orange transition-colors">Photos & Campus</a>
+        <a href="#accreditations" class="hover:text-brand-orange transition-colors">Accreditations</a>
+        <a href="#facilities" class="hover:text-brand-orange transition-colors">Hostels & Hospital</a>
+        <a href="#testimonials" class="hover:text-brand-orange transition-colors">Testimonials</a>
+        <a href="#reels" class="hover:text-brand-orange transition-colors">Videos</a>
+      </nav>
+
+      <!-- Direct Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+919946332121" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-red-600 hover:from-orange-500 hover:to-red-500 text-white font-bold px-4 py-2.5 rounded-full text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-orange-500/25 hover:scale-105">
+          <i class="fa-solid fa-phone"></i> +91 9946 33 21 21[cite: 48]
+        </a>
+        <a href="https://wa.me/919946332121?text=Hello%20Campus%20Abroad,%20I%20am%20enquiring%20about%20IUK%20Kyrgyzstan%20MD/MBBS%20Admission." target="_blank" class="p-2.5 bg-emerald-600 hover:bg-emerald-500 rounded-full text-white text-base transition-all duration-300 shadow-lg shadow-emerald-600/30 hover:scale-110">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH BACKGROUND IMAGE & PARALLAX EFFECT -->
+  <section class="relative min-h-[90vh] flex items-center justify-center py-24 px-4 overflow-hidden">
+    
+    <!-- Background Image from Booklet -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="images/campus-red-building.jpg" 
+        alt="International University of Kyrgyzstan" 
+        class="w-full h-full object-cover object-center transform scale-105"
+        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80';"
+      >
+      <!-- Deep Contrast Gradient Overlay -->
+      <div class="absolute inset-0 bg-black/85 backdrop-blur-[2px]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#030914] via-[#030914]/40 to-black/75"></div>
+    </div>
+
+    <!-- Ambient Floating Orbs -->
+    <div class="glow-orb w-96 h-96 bg-brand-orange top-1/4 left-10"></div>
+    <div class="glow-orb w-96 h-96 bg-brand-blue bottom-10 right-10"></div>
+
+    <!-- Hero Content -->
+    <div class="max-w-5xl mx-auto text-center relative z-10" data-aos="fade-up" data-aos-duration="1000">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-xs sm:text-sm font-semibold mb-6 shadow-lg backdrop-blur-sm animate-float">
+        <i class="fa-solid fa-award"></i> Established in 1993 by Decree of the President of Kyrgyzstan[cite: 8]
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
+        International University of Kyrgyzstan
+      </h1>
+
+      <p class="text-slate-200 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed mb-10 drop-shadow">
+        Admissions directly managed by <strong class="text-white">Campus Abroad Educational Services LLP</strong> — Official Authorised Representative[cite: 48]. 5-Year & 6-Year MD Programs taught 100% in English[cite: 25], fully compliant with Kyrgyz Republic State Accreditation (2026–2032), AAOPO, IAAR (WFME Recognised Agency), WHO / WDOMS, and ECFMG Pathway 3[cite: 62].
+      </p>
+
+      <!-- Key Metrics Counters -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 text-left max-w-4xl mx-auto">
+        
+        <div class="glass-card p-5 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-3xl font-black text-brand-orange flex items-baseline">
+            <span class="counter" data-target="33">0</span><span>+</span>
+          </div>
+          <div class="text-xs text-slate-300 mt-1 font-medium">Years of Medical Legacy (Est. 1993)[cite: 8]</div>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-3xl font-black text-[#0280c7] flex items-baseline">
+            <span class="counter" data-target="100">0</span><span>%</span>
+          </div>
+          <div class="text-xs text-slate-300 mt-1 font-medium">English Medium Instruction[cite: 25]</div>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-3xl font-black text-amber-400">
+            2026-32
+          </div>
+          <div class="text-xs text-slate-300 mt-1 font-medium">New 6-Yr State Accreditation</div>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+          <div class="text-3xl font-black text-emerald-400">
+            Pathway 3
+          </div>
+          <div class="text-xs text-slate-300 mt-1 font-medium">ECFMG (USA) Eligible[cite: 62]</div>
+        </div>
+
+      </div>
+
+      <!-- Hero Call-to-Actions -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#brochure" class="bg-gradient-to-r from-brand-orange to-red-600 hover:from-orange-500 hover:to-red-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/25 transition-all duration-300 text-xs uppercase tracking-wider flex items-center gap-2 hover:scale-105">
+          <i class="fa-solid fa-file-pdf text-sm"></i> Download Official 2026 Booklet
+        </a>
+        <a href="#accreditations" class="glass-card hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl transition-all duration-300 text-xs uppercase tracking-wider flex items-center gap-2 hover:scale-105">
+          <i class="fa-solid fa-stamp text-amber-400"></i> View Verified Approvals
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCREDITATIONS & LEGAL RECOGNITIONS -->
+  <section id="accreditations" class="py-24 px-4 bg-[#061325] relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-2">Government & Global Recognition</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Official Approvals & Accreditations</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">Verified records, registry identifiers, and legal documents for the International University of Kyrgyzstan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. State Accreditation (Kyrgyz Republic) -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded-full font-mono font-bold">2026 - 2032</span>
+            </div>
+            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Ministry of Education & Science</span>
+            <h3 class="text-lg font-bold text-white mb-2">State Accreditation (Kyrgyz Republic)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              New State Accreditation Certificate issued in 2026, valid from <strong>29 May 2026 to 29 May 2032</strong>. Covers General Medicine with 5- and 6-year normative study periods.
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>Validity:</strong> 29.05.2026 – 29.05.2032</div>
+              <div><strong>Programmes:</strong> 5-Year & 6-Year Normative</div>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="openModal('state_kyrgyz')" class="flex-1 py-2.5 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 rounded-xl text-xs font-bold transition">
+              <i class="fa-regular fa-eye mr-1"></i> View Details
+            </button>
+            <a href="https://ism.iuk.kg/wp-content/uploads/2026/09/Sertifikat-gosudarstvennoj-akkreditatsii.pdf" target="_blank" class="px-3 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl text-xs font-bold transition" title="Open Official PDF">
+              <i class="fa-solid fa-file-pdf text-red-400"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. National Programme Accreditation (AAOPO) -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-file-shield"></i>
+              </div>
+              <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2.5 py-1 rounded-full font-mono font-bold">National Agency</span>
+            </div>
+            <span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider block mb-1">AAOPO Accreditation</span>
+            <h3 class="text-lg font-bold text-white mb-2">National Programme Accreditation (AAOPO)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Accredited by the Agency for Accreditation of Educational Programmes and Organisations (AAOPO) for institutional quality and medical curricula standards.
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>Agency:</strong> AAOPO Kyrgyzstan</div>
+              <div><strong>Status:</strong> Officially Certified & Published</div>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="openModal('aaopo')" class="flex-1 py-2.5 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/30 text-blue-300 rounded-xl text-xs font-bold transition">
+              <i class="fa-regular fa-eye mr-1"></i> View Details
+            </button>
+            <a href="https://ism.iuk.kg/wp-content/uploads/2022/05/Sertifikat-Agentstva-po-akkreditatsii-obrazovatelnyh-programm-i-organizatsij-AAOPO..pdf" target="_blank" class="px-3 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl text-xs font-bold transition" title="Open Official PDF">
+              <i class="fa-solid fa-file-pdf text-red-400"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. IAAR (WFME Recognised Agency) -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2.5 py-1 rounded-full font-mono font-bold">WFME Recognition</span>
+            </div>
+            <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider block mb-1">IAAR International Accreditation</span>
+            <h3 class="text-lg font-bold text-white mb-2">IAAR (WFME Recognised Agency)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Accredited by IAAR — an independent agency formally recognized by the <strong>World Federation for Medical Education (WFME)</strong> for European medical standards.
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>Agency Status:</strong> WFME Recognised Body</div>
+              <div><strong>Certificate:</strong> AB 5388 (General Medicine)</div>
+            </div>
+          </div>
+          <button onclick="openModal('iaar_wfme')" class="w-full py-2.5 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-300 rounded-xl text-xs font-bold transition">
+            <i class="fa-regular fa-eye mr-1"></i> Clarification & Note
+          </button>
+        </div>
+
+        <!-- 4. World Directory of Medical Schools (WDOMS / FAIMER) -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2.5 py-1 rounded-full font-mono font-bold">FAIMER F0006555</span>
+            </div>
+            <span class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider block mb-1">WDOMS Listing[cite: 61]</span>
+            <h3 class="text-lg font-bold text-white mb-2">WDOMS / FAIMER Directory[cite: 61]</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Officially published in the World Directory of Medical Schools under FAIMER School ID: <strong>F0006555</strong> (Eastern Medical Campus)[cite: 61].
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>FAIMER ID:</strong> F0006555[cite: 61]</div>
+              <div><strong>Operational:</strong> Currently Operational[cite: 61]</div>
+            </div>
+          </div>
+          <button onclick="openModal('wdoms')" class="w-full py-2.5 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 rounded-xl text-xs font-bold transition">
+            <i class="fa-regular fa-eye mr-1"></i> View Directory Details[cite: 61]
+          </button>
+        </div>
+
+        <!-- 5. ECFMG / Intealth (USA Pathway 3) -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-flag-usa"></i>
+              </div>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded-full font-mono font-bold">Pathway 3[cite: 62]</span>
+            </div>
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">United States Certification[cite: 62]</span>
+            <h3 class="text-lg font-bold text-white mb-2">ECFMG (Intealth USA)[cite: 62]</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Listed among medical schools eligible for <strong>ECFMG Certification Pathways (Pathway 3)</strong> for USMLE Step 1 and Step 2 CK examinations[cite: 62].
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>ECFMG Status:</strong> Pathway 3 Eligible[cite: 62]</div>
+              <div><strong>Certification:</strong> Intealth / ECFMG[cite: 62]</div>
+            </div>
+          </div>
+          <button onclick="openModal('ecfmg')" class="w-full py-2.5 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 rounded-xl text-xs font-bold transition">
+            <i class="fa-regular fa-eye mr-1"></i> View Eligibility Record[cite: 62]
+          </button>
+        </div>
+
+        <!-- 6. NMC India Gazette Compliance -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-full font-mono font-bold">FMGL Compliant</span>
+            </div>
+            <span class="text-[10px] font-bold text-orange-400 uppercase tracking-wider block mb-1">National Medical Commission</span>
+            <h3 class="text-lg font-bold text-white mb-2">NMC (FMGL 2021) Compliance</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              100% compliant with the National Medical Commission (NMC) 2021 regulations: English medium instruction[cite: 25], 54+ months academic training, and 12 months clinical internship.
+            </p>
+            <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 mb-4 space-y-1">
+              <div><strong>Duration:</strong> 5 Years + 1 Year Internship[cite: 25]</div>
+              <div><strong>Medium:</strong> 100% English[cite: 25]</div>
+            </div>
+          </div>
+          <button onclick="openModal('nmc')" class="w-full py-2.5 bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/30 text-orange-300 rounded-xl text-xs font-bold transition">
+            <i class="fa-regular fa-eye mr-1"></i> View Guidelines
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPUS & BOOKLET PHOTO GALLERY -->
+  <section id="gallery" class="py-24 px-4 bg-slate-950 border-t border-slate-900 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold text-brand-orange uppercase tracking-widest block mb-2">Original Campus Photography</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Official Campuses, Labs & Hospital</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">Verified photo tour of the International University of Kyrgyzstan Bishkek facilities[cite: 49, 50, 51, 54, 56, 58].</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Eastern Medical Campus -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/eastern-medical-campus.jpg', 'Eastern Medical Campus (7 April St 6)')" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/eastern-medical-campus.jpg" 
+              alt="Eastern Medical Campus Front Façade" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-amber-400">
+              <i class="fa-solid fa-building-columns mr-1"></i> Eastern Medical Campus
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Eastern Medical Campus (7 April St 6)[cite: 3]</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Central academic hub housing administrative departments, high-tech lecture halls, and main assembly facilities[cite: 16].</p>
+          </div>
+        </div>
+
+        <!-- Aerial Campus View -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/campus-aerial.jpg', 'Central Academic Complex Aerial View')" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/campus-aerial.jpg" 
+              alt="IUK Central Complex Aerial Shot" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-blue-400">
+              <i class="fa-solid fa-city mr-1"></i> Aerial Campus Complex
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Academic Complex & Grounds</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Multi-building urban university layout equipped with sports turfs, student union hubs, and libraries[cite: 12, 14, 23].</p>
+          </div>
+        </div>
+
+        <!-- Amanat Hospital Reception -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/amanat-hospital.jpg', 'Amanat Hospital Reception & Clinics')" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/amanat-hospital.jpg" 
+              alt="Amanat Hospital Reception" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-emerald-400">
+              <i class="fa-solid fa-hospital mr-1"></i> University Clinic
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Amanat Hospital Reception & Wards</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">IUK’s dedicated university teaching hospital providing bedside postings, outpatient care, and diagnostics[cite: 19].</p>
+          </div>
+        </div>
+
+        <!-- Morphological Lab -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/morphological-lab.jpg', 'Morphological 3D Anatomy Lab')" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/morphological-lab.jpg" 
+              alt="Morphological 3D Anatomy Lab" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-purple-400">
+              <i class="fa-solid fa-microscope mr-1"></i> Morphological Center
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Morphological Lab & 3D Anatomy Museum[cite: 17]</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Interactive virtual dissection tables, preserved cadaveric specimens, histology and pathology suites[cite: 17].</p>
+          </div>
+        </div>
+
+        <!-- Campus Night View -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/campus-night.jpg', 'Academic Tower by Night')" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/campus-night.jpg" 
+              alt="Campus Tower Night Illumination" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-yellow-400">
+              <i class="fa-solid fa-moon mr-1"></i> Night Campus
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Academic Complex by Night</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Secure enclosed campus premises with 24/7 CCTV surveillance, biometric security checkpoints, and floodlit pathways.</p>
+          </div>
+        </div>
+
+        <!-- Red & White Tower Facade -->
+        <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" onclick="openPhotoModal('images/campus-red-building.jpg', 'Iconic Main Academic Tower')" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-64 overflow-hidden relative">
+            <img 
+              src="images/campus-red-building.jpg" 
+              alt="Red & White Tower Architecture" 
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80';"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+            <span class="absolute bottom-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-rose-400">
+              <i class="fa-solid fa-landmark mr-1"></i> Iconic Architecture
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-sm font-bold text-white mb-1 group-hover:text-brand-orange transition-colors">Main Academic Tower</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">The signature architectural landmark of IUK, established by Presidential Decree in 1993[cite: 3, 8].</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT TESTIMONIALS (FROM OFFICIAL BOOKLET) -->
+  <section id="testimonials" class="py-24 px-4 bg-[#061325] border-t border-slate-900 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold text-brand-orange uppercase tracking-widest block mb-2">Real Journeys, Real Doctors</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Student & Alumni Licensing Success</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">Hear directly from students and licensed alumni who cleared FMGE, USMLE, PLAB, and AMC[cite: 36, 37].</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Student 1: FMGE Success -->
+        <div class="glass-card rounded-2xl p-6 relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-brand-orange/20 border border-brand-orange text-brand-orange flex items-center justify-center font-bold text-lg">
+              DA
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Dr. Akash Dhaka[cite: 36]</h3>
+              <span class="text-[11px] font-semibold text-emerald-400"><i class="fa-solid fa-circle-check"></i> Cleared FMGE (India)[cite: 36]</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed italic">
+            "My journey at IUK gave me the knowledge and clinical confidence to achieve success in FMGE. I am proud to continue my medical career with the foundation built here."[cite: 36]
+          </p>
+        </div>
+
+        <!-- Student 2: USMLE Success -->
+        <div class="glass-card rounded-2xl p-6 relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500 text-blue-400 flex items-center justify-center font-bold text-lg">
+              DU
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Dr. Uzair Maqsood[cite: 36]</h3>
+              <span class="text-[11px] font-semibold text-blue-400"><i class="fa-solid fa-circle-check"></i> Cleared USMLE (USA)[cite: 36]</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed italic">
+            "My years at IUK shaped my medical knowledge and professional skills, helping me progress smoothly towards international residency career opportunities in the United States."[cite: 36]
+          </p>
+        </div>
+
+        <!-- Student 3: Current Student Experience -->
+        <div class="glass-card rounded-2xl p-6 relative" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500 text-amber-400 flex items-center justify-center font-bold text-lg">
+              NS
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Nishant Singh[cite: 44]</h3>
+              <span class="text-[11px] font-semibold text-amber-400"><i class="fa-solid fa-graduation-cap"></i> Student (Batch 2025-2030)[cite: 44]</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed italic">
+            "The university has provided me with a strong academic foundation, supportive teachers, and an environment where I can continuously learn. Being part of this diverse community helped me grow tremendously."[cite: 44]
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM REELS & VIDEO GALLERY -->
+  <section id="reels" class="py-24 px-4 bg-slate-950 border-t border-slate-900 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold text-brand-orange uppercase tracking-widest block mb-2">Video Walkthroughs</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Campus & Hospital Vlogs</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">Click to watch reels on campus life, VIP hostels, Amanat Hospital, and student sessions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="https://www.instagram.com/reel/DfCU8ZiynTG/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-emerald-400 uppercase tracking-wider"><i class="fa-solid fa-hospital mr-1"></i> Hospital Tour</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">Amanat Hospital Vlog & Bedside Postings</h3>
+          <p class="text-xs text-slate-400">Step inside Amanat Hospital's inpatient wards, ICU units, and clinical consultation rooms.</p>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DeUGM23RaDb/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-amber-400 uppercase tracking-wider"><i class="fa-solid fa-bed mr-1"></i> Accommodation</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">VIP Hostel Tour & Room Amenities</h3>
+          <p class="text-xs text-slate-400">Walkthrough of student bedrooms, heating systems, biometric security, and common study spaces[cite: 23].</p>
+        </a>
+
+        <a href="https://www.instagram.com/reel/Dei33VWynpJ/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-blue-400 uppercase tracking-wider"><i class="fa-solid fa-microscope mr-1"></i> Practical Training</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">Morphological Laboratory Walkthrough</h3>
+          <p class="text-xs text-slate-400">Discover histology collections, 3D anatomical models, and pathology simulation equipment[cite: 17].</p>
+        </a>
+
+        <a href="https://www.instagram.com/reel/Dd8wfXqyBI1/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-purple-400 uppercase tracking-wider"><i class="fa-solid fa-chalkboard-user mr-1"></i> Lecture Hall</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">Interactive Classroom Lectures & Labs</h3>
+          <p class="text-xs text-slate-400">English-medium theoretical lectures, interactive case discussions, and professor guidance[cite: 13, 25].</p>
+        </a>
+
+        <a href="https://www.instagram.com/reel/De8v9G-yh-D/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-rose-400 uppercase tracking-wider"><i class="fa-solid fa-user-doctor mr-1"></i> Testimonial</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">Indian Student Life & Mess Food Review</h3>
+          <p class="text-xs text-slate-400">Honest student review about living conditions in Bishkek, mess food taste, and hostel safety[cite: 23].</p>
+        </a>
+
+        <a href="https://www.instagram.com/reel/Dd55na3SlcZ/" target="_blank" class="glass-card rounded-2xl p-5 block transition group" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="font-bold text-yellow-400 uppercase tracking-wider"><i class="fa-solid fa-handshake-angle mr-1"></i> Welcoming</span>
+            <span class="text-slate-500 group-hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-pink-500"></i> Watch Reel</span>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-brand-orange transition-colors mb-1">Airport Welcome & Arrival in Bishkek</h3>
+          <p class="text-xs text-slate-400">Watch the Campus Abroad & IUK team receiving new students at Manas International Airport[cite: 41].</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD PROSPECTUS / BROCHURE BANNER -->
+  <section id="brochure" class="py-20 px-4 bg-gradient-to-r from-brand-orange to-red-600 text-white relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="zoom-in">
+      <div class="w-16 h-16 bg-white text-brand-orange rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl shadow-xl animate-bounce">
+        <i class="fa-solid fa-file-pdf"></i>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-3 font-serif">Download Official 2026 Admissions Prospectus</h2>
+      <p class="text-slate-100 text-sm sm:text-base max-w-xl mx-auto mb-8">
+        Access the complete booklet covering syllabus breakdown, fee framework, hostel rules, visa instructions, and clinical postings[cite: 23, 25, 41].
+      </p>
+      <button onclick="downloadBrochure()" class="bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold px-8 py-4 rounded-xl shadow-2xl transition-all duration-300 text-xs uppercase tracking-wider flex items-center gap-2 mx-auto hover:scale-105">
+        <i class="fa-solid fa-download"></i> Save Official Booklet (PDF)
+      </button>
+    </div>
+  </section>
+
+  <!-- CONTACT & ENQUIRY FORM (CAMPUS ABROAD KOZHIKODE OFFICE ONLY) -->
+  <section id="contact" class="py-24 px-4 bg-[#030914] border-t border-slate-900">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Contact Information (From Booklet Page 48) -->
+      <div data-aos="fade-right">
+        <span class="text-xs font-bold text-brand-orange uppercase tracking-widest block mb-2">Authorised Admissions Partner[cite: 48]</span>
+        <h2 class="text-3xl font-extrabold text-white mb-6">Campus Abroad Educational Services LLP[cite: 48]</h2>
+        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-8">
+          We provide end-to-end admission guidance, university documentation, Kyrgyz student visa clearance, flight group bookings, airport reception at Bishkek, and hostel allotment[cite: 41].
+        </p>
+
+        <div class="space-y-6 text-xs text-slate-300">
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-brand-orange flex items-center justify-center text-base shrink-0 shadow-md">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <strong class="text-white block text-sm">Head Office (Kozhikode, Kerala)[cite: 48]</strong>
+              Room No. S-32, 2nd Floor, Emerald Building,<br>
+              IG Road, Near Big Bazar, Kozhikode, Kerala - 673 004[cite: 48]
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-brand-orange flex items-center justify-center text-base shrink-0 shadow-md">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <strong class="text-white block text-sm">Admissions Helpline</strong>
+              <a href="tel:+919946332121" class="hover:text-amber-400 transition-colors">+91 9946 33 21 21[cite: 48]</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-emerald-400 flex items-center justify-center text-base shrink-0 shadow-md">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <strong class="text-white block text-sm">WhatsApp Admissions Desk</strong>
+              <a href="https://wa.me/919946332121?text=Hello%20Campus%20Abroad" target="_blank" class="hover:text-emerald-400 transition-colors">+91 9946 33 21 21 (Instant Chat)[cite: 48]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Lead Capture Form -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-2xl" data-aos="fade-left">
+        <h3 class="text-lg font-bold text-white mb-2">Request Admission Counselling</h3>
+        <p class="text-xs text-slate-400 mb-6">Submit your details to receive fee structure and document checklist directly on WhatsApp.</p>
+
+        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">Student's Full Name</label>
+            <input type="text" required placeholder="e.g. Muhammed Shafi" class="w-full bg-slate-950/80 border border-slate-800 focus:border-brand-orange rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors">
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">WhatsApp Mobile Number</label>
+            <input type="tel" required placeholder="+91 99463 32121" class="w-full bg-slate-950/80 border border-slate-800 focus:border-brand-orange rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors">
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">NEET Qualification Status</label>
+            <select class="w-full bg-slate-950/80 border border-slate-800 focus:border-brand-orange rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors">
+              <option>NEET Qualified (2024 / 2025 / 2026)</option>
+              <option>Appearing for NEET 2026</option>
+              <option>Other Country Citizen</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">City / District</label>
+            <input type="text" placeholder="e.g. Kozhikode, Malappuram, Ernakulam" class="w-full bg-slate-950/80 border border-slate-800 focus:border-brand-orange rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors">
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-brand-orange to-red-600 hover:from-orange-500 hover:to-red-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all duration-300 text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:scale-[1.02]">
+            <i class="fa-solid fa-paper-plane"></i> Connect With Campus Abroad
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-10 px-4 border-t border-slate-900 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto space-y-3">
+      <div class="font-extrabold text-sm text-[#0280c7] tracking-wider">CAMPUS ABROAD EDUCATIONAL SERVICES LLP[cite: 48]</div>
+      <p class="max-w-2xl mx-auto text-slate-400 text-[11px]">
+        Official Authorised Admissions Representative for International University of Kyrgyzstan[cite: 48]. Verified documents sourced from IUK registry, Kyrgyz Republic Ministry of Education, and official 2026 academic prospectus.
+      </p>
+      <div class="pt-3 text-slate-600 border-t border-slate-900 text-[10px]">
+        © 2026 Campus Abroad Educational Services LLP. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX / CERTIFICATE MODAL -->
+  <div id="certModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="relative max-w-xl w-full bg-[#061325] border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- PHOTO ZOOM LIGHTBOX -->
+  <div id="photoModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg hidden flex flex-col items-center justify-center p-4" onclick="closePhotoModal()">
+    <button class="absolute top-6 right-6 text-slate-400 hover:text-white text-3xl">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="photoModalImg" src="" alt="Zoomed Campus View" class="max-h-[80vh] max-w-[90vw] object-contain rounded-xl shadow-2xl border border-slate-800">
+    <div id="photoModalCaption" class="mt-4 text-sm text-slate-300 font-medium"></div>
+  </div>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+
+    // Dynamic Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    let hasAnimated = false;
+
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('section');
+      if (!hero) return;
+      const rect = hero.getBoundingClientRect();
+      if (rect.top < window.innerHeight && !hasAnimated) {
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          let count = 0;
+          const speed = target / 50;
+          const update = () => {
+            count += speed;
+            if (count < target) {
+              counter.innerText = Math.ceil(count);
+              setTimeout(update, 20);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          update();
+        });
+        hasAnimated = true;
+      }
+    });
+
+    // Modal Content Database
+    const certDetails = {
+      state_kyrgyz: {
+        title: "State Accreditation (Kyrgyz Republic)",
+        reg: "New Certificate 2026",
+        period: "29 May 2026 to 29 May 2032 (6 Years)",
+        program: "General Medicine (5- & 6-Year Normative)",
+        pdfLink: "https://ism.iuk.kg/wp-content/uploads/2026/09/Sertifikat-gosudarstvennoj-akkreditatsii.pdf",
+        desc: "ISM-IUK received a new State Accreditation Certificate in 2026, officially valid from 29 May 2026 to 29 May 2032, covering the General Medicine programme with both five- and six-year normative study periods."
+      },
+      aaopo: {
+        title: "National Programme Accreditation (AAOPO)",
+        reg: "Certificate of Educational Programme & Organisation",
+        period: "Published National Registry",
+        program: "560001 General Medicine",
+        pdfLink: "https://ism.iuk.kg/wp-content/uploads/2022/05/Sertifikat-Agentstva-po-akkreditatsii-obrazovatelnyh-programm-i-organizatsij-AAOPO..pdf",
+        desc: "The institution publishes comprehensive national accreditation documentation from AAOPO confirming that its medical educational curriculum meets national higher education standards."
+      },
+      iaar_wfme: {
+        title: "IAAR & WFME Recognition Clarification",
+        reg: "IAAR Certificate AB 5388",
+        period: "5-Year Specialized Programmatic Accreditation",
+        program: "General Medicine",
+        pdfLink: "https://ism.iuk.kg/wp-content/uploads/2021/12/IAAR_Certificate_General_Medicine.pdf",
+        desc: "IAAR is an independent accreditation agency recognised by the World Federation for Medical Education (WFME). This represents the accreditation agency's WFME recognition status conforming to global medical standards, rather than direct WFME accreditation of the university itself."
+      },
+      wdoms: {
+        title: "World Directory of Medical Schools (WDOMS / FAIMER)",
+        reg: "FAIMER School ID: F0006555",
+        period: "Currently Operational (Instruction started 2018)",
+        program: "International School of Medicine, IUK Eastern Medical Campus",
+        pdfLink: "https://ism.iuk.kg/engl/en1/partners-en/international-associations/",
+        desc: "Listed in the World Directory of Medical Schools under FAIMER ID: F0006555. Available to medical education regulators and residency directors worldwide."
+      },
+      ecfmg: {
+        title: "ECFMG / Intealth (USA Pathway 3)",
+        reg: "Eligible for 2027 Pathways (Pathways 2-5)",
+        period: "Pathway 3 Eligible School",
+        program: "International School of Medicine, IUK Eastern Medical Campus",
+        pdfLink: "https://ism.iuk.kg/wp-content/uploads/2021/12/IAAR_Certificate_General_Medicine.pdf",
+        desc: "Officially eligible for ECFMG Certification through Pathway 3 (Medical Schools with IAAR/WFME-recognized accreditation). Students and graduates are eligible for USMLE Step 1, Step 2 CK, and USA residency match."
+      },
+      nmc: {
+        title: "NMC (India) Gazette 2021 Compliance",
+        reg: "FMGL Regulations 2021 Compliant",
+        period: "Full Academic Program",
+        program: "Doctor of Medicine (MD)",
+        pdfLink: "https://ism.iuk.kg/engl/en1/partners-en/international-associations/",
+        desc: "100% compliant with Foreign Medical Graduate Licentiate regulations: 54 months academic training taught entirely in English, followed by a continuous 12-month clinical rotation/internship."
+      }
+    };
+
+    function openModal(key) {
+      const data = certDetails[key];
+      document.getElementById('modalContent').innerHTML = `
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center text-xl mb-3">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">${data.title}</h3>
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-left text-xs font-mono text-slate-300 space-y-1 mb-4">
+            <div><strong class="text-brand-orange">Reference:</strong> ${data.reg}</div>
+            <div><strong class="text-brand-orange">Period:</strong> ${data.period}</div>
+            <div><strong class="text-brand-orange">Course:</strong> ${data.program}</div>
+          </div>
+          <p class="text-xs text-slate-300 mb-6 leading-relaxed">${data.desc}</p>
+          <div class="flex gap-2">
+            <a href="${data.pdfLink}" target="_blank" class="flex-1 py-2.5 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-xl text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-file-pdf"></i> Open Official Source PDF
+            </a>
+            <button onclick="closeModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-xl text-xs uppercase tracking-wider transition">Close</button>
+          </div>
+        </div>
+      `;
+      document.getElementById('certModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('certModal').classList.add('hidden');
+    }
+
+    function openPhotoModal(src, caption) {
+      document.getElementById('photoModalImg').src = src;
+      document.getElementById('photoModalCaption').innerText = caption;
+      document.getElementById('photoModal').classList.remove('hidden');
+    }
+
+    function closePhotoModal() {
+      document.getElementById('photoModal').classList.add('hidden');
+    }
+
+    function downloadBrochure() {
+      alert("Opening IUK 2026 Prospectus...");
+      window.open('https://muk.iuk.kg/wp-content/uploads/2021/12/IAAR_Certificate_General_Medicine.pdf', '_blank');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert("Thank you! Your inquiry has been received by Campus Abroad. An admission counselor will contact you shortly on WhatsApp (+91 9946 33 21 21).");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
